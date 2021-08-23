@@ -32,7 +32,7 @@ Där emellan kan vi köra massor av saker. De två främsta är:
 `Add <something>` där du kan kopiera in filer från din lokala maskin till imagen. Tex i java vill vi oftast kopiera in den byggda jar-filen.
 
 #### Uppgift 1 (Optional om du vill återminnas saker från tidigare kurser)
-* Skapa en fil a.txt med innehållet "Hello, <name>!" (`echo "Hello, <name>!" > a.txt`)
+* Skapa en fil a.txt med innehållet `Hello, <name>!` (`echo "Hello, <name>!" > a.txt`)
 * Skapa en Dockerfile där du lägger in filen `ADD <something>`
 * I dockerfilen byt ut <name> till ditt namn `RUN <something>` Här kan man tex använda sig av sed `sed -i s/\<name\>/dan/g a.txt`
 * När docker imagen körs ska den skriva ut innehållet i filen och sedan dö.
@@ -94,12 +94,12 @@ Lägg till din app i docker-compose.yml och se till att allt fungerar så som de
 Skapa ett konto på dockerhub om du inte redan har det (tror ni gjorde detta under Application Lifecyle Kursen)
 Skapa ett repo "bank".
 
-Om du inte redan har döpt din docker-image till <repo>/bank:1.0.0
+Om du inte redan har döpt din docker-image till `<repo>/bank:1.0.0`
 
 kan du välja mellan
 1. kör docker build igen och döp den rätt
-2. tagga om din redan byggda image med docker tag <image-name> <repo>/bank:1.0.0
+2. tagga om din redan byggda image med `docker tag <image-name> <repo>/bank:1.0.0`
 
-Därefter kan du pusha din image med docker push <repo>/bank:1.0.0
+Därefter kan du pusha din image med docker push `<repo>/bank:1.0.0`
 
 Kolla så att den kom dit den skulle!
