@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My bank</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<p th:text="'UserID:' + ${userId} + '!'" />
+<p th:text="'AccountID:' + ${accountId} + '!'" />
+<p th:text="'Balance:' + ${balance} + '!'" />
+
+<form action="#" th:action="@{/bank/{user}/account/{id}/deposit(user=${userId}, id=${accountId})}" th:object="${deposit}" method="post">
+    <p>Deposit: <input type="text" th:field="*{amount}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+<form action="#" th:action="@{/bank/{user}/account/{id}/withdraw(user=${userId}, id=${accountId})}"  th:object="${withdraw}" method="post">
+    <p>Withdraw: <input type="text" th:field="*{amount}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>
