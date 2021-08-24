@@ -3,7 +3,7 @@ package se.nackademin.java20.lab1;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import se.nackademin.java20.lab1.application.PersonalFinanceService;
-import se.nackademin.java20.lab1.persistance.AccountRepository;
+import se.nackademin.java20.lab1.domain.AccountRepository;
 import se.nackademin.java20.lab1.persistance.AccountRepositoryHibernate;
 
 import javax.persistence.EntityManager;

@@ -1,6 +1,7 @@
 package se.nackademin.java20.lab1.persistance;
 
 import se.nackademin.java20.lab1.domain.Account;
+import se.nackademin.java20.lab1.domain.AccountRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;

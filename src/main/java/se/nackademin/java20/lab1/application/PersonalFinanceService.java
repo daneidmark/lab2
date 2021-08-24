@@ -1,7 +1,7 @@
 package se.nackademin.java20.lab1.application;
 
 import se.nackademin.java20.lab1.domain.Account;
-import se.nackademin.java20.lab1.persistance.AccountRepository;
+import se.nackademin.java20.lab1.domain.AccountRepository;
 
 import javax.transaction.Transactional;
 
